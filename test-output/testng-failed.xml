@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [TestNG Parallel Testing Suite]" parallel="classes">
+  <test name="TestNG Parallel Chrome Tests in Classes Level(failed)" parallel="classes">
+    <classes>
+      <class name="ParallelExecutionTests.FirefoxTest2">
+        <methods>
+          <include name="firefoxTest2"/>
+        </methods>
+      </class> <!-- ParallelExecutionTests.FirefoxTest2 -->
+      <class name="ParallelExecutionTests.FirefoxTest1">
+        <methods>
+          <include name="firefoxTest1"/>
+        </methods>
+      </class> <!-- ParallelExecutionTests.FirefoxTest1 -->
+    </classes>
+  </test> <!-- TestNG Parallel Chrome Tests in Classes Level(failed) -->
+  <test name="TestNG Parallel Firefox Tests in Tests Level(failed)" parallel="classes">
+    <classes>
+      <class name="ParallelExecutionTests.FirefoxTest2">
+        <methods>
+          <include name="firefoxTest2"/>
+        </methods>
+      </class> <!-- ParallelExecutionTests.FirefoxTest2 -->
+      <class name="ParallelExecutionTests.FirefoxTest1">
+        <methods>
+          <include name="firefoxTest1"/>
+        </methods>
+      </class> <!-- ParallelExecutionTests.FirefoxTest1 -->
+    </classes>
+  </test> <!-- TestNG Parallel Firefox Tests in Tests Level(failed) -->
+</suite> <!-- Failed suite [TestNG Parallel Testing Suite] -->
